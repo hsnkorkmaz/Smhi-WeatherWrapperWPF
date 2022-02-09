@@ -1,0 +1,101 @@
+﻿<Window x:Class="WpfApp1.ApiDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="SMHI API DEMO" Height="450" Width="840" 
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Background="#181735" Loaded="Window_Loaded">
+    <Grid>
+        <!--<DataGrid x:Name="Datagrid1" d:ItemsSource="{d:SampleData ItemCount=5}"/>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0f0f2d" Grid.ColumnSpan="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Parameters"
+                       Foreground="White"
+                       Grid.Column="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontWeight="Medium"
+                       FontFamily="Fonts/#Dosis"/>
+
+            <TextBlock Text="Stations"
+                       Foreground="White"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontWeight="Medium"
+                       FontFamily="Fonts/#Dosis"/>
+
+            <TextBlock Text="Periods"
+                       Foreground="White"
+                       Grid.Column="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontWeight="Medium"
+                       FontFamily="Fonts/#Dosis"/>
+
+            <TextBlock Text="Data"
+                       Foreground="White"
+                       Grid.Column="3"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontWeight="Medium"
+                       FontFamily="Fonts/#Dosis"/>
+        </Grid>
+
+
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <ListBox Name="LParameters" Width="210"
+                         Height="400"
+                         FontFamily="Fonts/#Dosis"
+                         SelectedValuePath="Key"
+                         DisplayMemberPath="Value"
+                         />
+                <ListBox Name="LStations" Width="210"
+                         Height="400"
+                         FontFamily="Fonts/#Dosis"
+                         SelectedValuePath="Key"
+                         DisplayMemberPath="Value"
+                />
+                <ListBox Name="LPeriods" Width="210"
+                         Height="400"
+                         FontFamily="Fonts/#Dosis"
+                         SelectedValuePath="Key"
+                         DisplayMemberPath="Value"
+                />
+                <ListBox Name="LData" Width="210"
+                         Height="400"
+                         FontFamily="Fonts/#Dosis"
+                         SelectedValuePath="Key"
+                         DisplayMemberPath="Value"
+                />
+            </StackPanel>
+        </StackPanel>
+
+     
+    </Grid>
+
+
+</Window>
