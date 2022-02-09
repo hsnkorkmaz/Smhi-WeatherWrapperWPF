@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WpfApp1.Interfaces;
-using WpfApp1.Models;
+using SMHIAPI.Interfaces;
+using SMHIAPI.Models;
 
-namespace WpfApp1.Services
+namespace SMHIAPI.Services
 {
     public class HttpRequestService : IHttpRequestService
     {

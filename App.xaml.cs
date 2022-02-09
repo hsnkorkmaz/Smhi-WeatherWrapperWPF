@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WpfApp1.Interfaces;
-using WpfApp1.Services;
+using SMHIAPI.Interfaces;
+using SMHIAPI.Services;
 
-namespace WpfApp1
+namespace SMHIAPI
 {
     /// <summary>
     /// Interaction logic for App.xaml

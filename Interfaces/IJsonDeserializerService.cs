@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using WpfApp1.Models;
+using SMHIAPI.Models;
 
-namespace WpfApp1.Interfaces
+namespace SMHIAPI.Interfaces
 {
     public interface IJsonDeserializerService
     {

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
+﻿using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WpfApp1.Dtos.SMHI.Main;
-using WpfApp1.Interfaces;
-using WpfApp1.Models;
+using SMHIAPI.Dtos.SMHI.Main;
+using SMHIAPI.Interfaces;
+using SMHIAPI.Models;
 
-namespace WpfApp1.Services
+namespace SMHIAPI.Services
 {
     public class SmhiService : ISmhiService
     {

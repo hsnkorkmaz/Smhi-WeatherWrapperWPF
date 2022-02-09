@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WpfApp1.Dtos.SMHI;
-using WpfApp1.Interfaces;
-using WpfApp1.Models;
+using SMHIAPI.Dtos.SMHI;
+using SMHIAPI.Interfaces;
+using SMHIAPI.Models;
 
-namespace WpfApp1.Services
+namespace SMHIAPI.Services
 {
     public class WeatherService : IWeatherService
     {

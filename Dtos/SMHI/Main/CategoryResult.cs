@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace WpfApp1.Dtos.SMHI.Main
+namespace SMHIAPI.Dtos.SMHI.Main
 {
     public class CategoryResult
     {
